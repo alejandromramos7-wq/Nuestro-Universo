@@ -1,0 +1,706 @@
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+
+/* =========================================================
+   TABLETS
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .section {
+        padding:
+            100px 30px;
+    }
+
+
+    .home-section {
+        padding:
+            80px 30px;
+    }
+
+
+    .home-content h1 {
+        font-size:
+            clamp(3.5rem, 10vw, 6rem);
+    }
+
+
+    .section-title {
+        font-size:
+            clamp(2.5rem, 7vw, 4rem);
+    }
+
+
+    .constellation-area {
+        width: 95%;
+        height: 420px;
+    }
+
+
+    .letter-paper {
+        max-width:
+            680px;
+
+        padding:
+            50px 45px;
+    }
+
+
+    .memory-viewer {
+        width: 90%;
+    }
+
+}
+
+
+
+/* =========================================================
+   CELULARES
+========================================================= */
+
+@media (max-width: 600px) {
+
+    html {
+        scroll-behavior:
+            smooth;
+    }
+
+
+    body {
+        font-size:
+            15px;
+    }
+
+
+    /* -----------------------------------------
+       SECCIONES
+    ----------------------------------------- */
+
+    .section {
+        min-height:
+            auto;
+
+        padding:
+            90px 18px;
+    }
+
+
+    .section-inner {
+        width:
+            100%;
+    }
+
+
+
+    /* -----------------------------------------
+       INICIO
+    ----------------------------------------- */
+
+    .home-section {
+        min-height:
+            100svh;
+
+        padding:
+            40px 20px;
+    }
+
+
+    .eyebrow {
+        font-size:
+            9px;
+
+        letter-spacing:
+            3px;
+
+        line-height:
+            1.7;
+
+        max-width:
+            280px;
+    }
+
+
+    .home-content h1 {
+        font-size:
+            clamp(3rem, 16vw, 5rem);
+
+        line-height:
+            0.9;
+    }
+
+
+    .home-content h1 span {
+        display:
+            block;
+    }
+
+
+    .home-subtitle {
+        width:
+            95%;
+
+        font-size:
+            17px;
+
+        line-height:
+            1.7;
+    }
+
+
+    .main-button {
+        min-height:
+            50px;
+
+        padding:
+            14px 22px;
+
+        font-size:
+            12px;
+    }
+
+
+    .scroll-indicator {
+        margin-top:
+            45px;
+    }
+
+
+
+    /* -----------------------------------------
+       TÍTULOS
+    ----------------------------------------- */
+
+    .section-heading {
+        margin-bottom:
+            40px;
+    }
+
+
+    .section-eyebrow {
+        font-size:
+            9px;
+
+        letter-spacing:
+            3px;
+    }
+
+
+    .section-title {
+        font-size:
+            clamp(2.3rem, 12vw, 3.5rem);
+
+        line-height:
+            1;
+    }
+
+
+    .section-description {
+        width:
+            95%;
+
+        font-size:
+            15px;
+
+        line-height:
+            1.7;
+    }
+
+
+
+    /* -----------------------------------------
+       MENÚ
+    ----------------------------------------- */
+
+    .menu-open-button {
+        top:
+            18px;
+
+        right:
+            18px;
+
+        width:
+            45px;
+
+        height:
+            45px;
+
+        font-size:
+            18px;
+    }
+
+
+    .menu-content {
+        width:
+            calc(100% - 30px);
+
+        max-height:
+            calc(100svh - 30px);
+
+        padding:
+            35px 18px 25px;
+
+        overflow-y:
+            auto;
+    }
+
+
+    .menu-header h2 {
+        font-size:
+            30px;
+    }
+
+
+    .menu-header p {
+        font-size:
+            12px;
+    }
+
+
+    .menu-buttons {
+        gap:
+            9px;
+    }
+
+
+    .menu-item {
+        min-height:
+            68px;
+
+        padding:
+            11px 12px;
+    }
+
+
+    .menu-icon {
+        width:
+            38px;
+
+        height:
+            38px;
+
+        flex:
+            0 0 38px;
+
+        font-size:
+            17px;
+    }
+
+
+    .menu-text strong {
+        font-size:
+            13px;
+    }
+
+
+    .menu-text small {
+        font-size:
+            10px;
+
+        line-height:
+            1.4;
+    }
+
+
+    .menu-arrow {
+        font-size:
+            22px;
+    }
+
+
+    .menu-footer {
+        margin-top:
+            20px;
+    }
+
+
+
+    /* -----------------------------------------
+       CONSTELACIÓN
+    ----------------------------------------- */
+
+    .constellation-area {
+        width:
+            100%;
+
+        height:
+            320px;
+
+        margin:
+            20px auto 25px;
+    }
+
+
+    .constellation-star {
+        width:
+            8px;
+
+        height:
+            8px;
+    }
+
+
+    .constellation-message {
+        padding:
+            0 10px;
+
+        font-size:
+            16px;
+
+        line-height:
+            1.7;
+    }
+
+
+
+    /* -----------------------------------------
+       IDIOMAS
+    ----------------------------------------- */
+
+    .language-card {
+        width:
+            100%;
+
+        min-height:
+            340px;
+
+        padding:
+            40px 20px;
+    }
+
+
+    .language-flag {
+        font-size:
+            45px;
+    }
+
+
+    .language-text {
+        font-size:
+            clamp(2.2rem, 11vw, 3.5rem);
+
+        line-height:
+            1.1;
+
+        word-break:
+            break-word;
+    }
+
+
+    .language-name {
+        font-size:
+            12px;
+
+        letter-spacing:
+            3px;
+    }
+
+
+    .secondary-button {
+        padding:
+            13px 18px;
+
+        font-size:
+            11px;
+    }
+
+
+
+    /* -----------------------------------------
+       CARTA
+    ----------------------------------------- */
+
+    .letter-wrapper {
+        width:
+            100%;
+    }
+
+
+    .envelope {
+        width:
+            210px;
+
+        height:
+            135px;
+    }
+
+
+    .letter-paper {
+        width:
+            100%;
+
+        padding:
+            35px 25px;
+
+        border-radius:
+            3px;
+    }
+
+
+    .letter-greeting {
+        font-size:
+            22px;
+    }
+
+
+    .letter-text {
+        font-size:
+            15px;
+
+        line-height:
+            1.8;
+
+        text-align:
+            left;
+    }
+
+
+    .letter-ending {
+        font-size:
+            15px;
+    }
+
+
+    .letter-signature {
+        font-size:
+            28px;
+    }
+
+
+
+    /* -----------------------------------------
+       FOTOS
+    ----------------------------------------- */
+
+    .memory-viewer {
+        width:
+            100%;
+    }
+
+
+    .photo-frame {
+        width:
+            100%;
+
+        aspect-ratio:
+            4 / 5;
+    }
+
+
+    .photo-frame img {
+        object-fit:
+            cover;
+    }
+
+
+    .memory-controls {
+        margin-top:
+            20px;
+    }
+
+
+    .memory-button {
+        width:
+            45px;
+
+        height:
+            45px;
+
+        font-size:
+            28px;
+    }
+
+
+    .memory-counter {
+        font-size:
+            12px;
+    }
+
+
+
+    /* -----------------------------------------
+       FUEGOS ARTIFICIALES
+    ----------------------------------------- */
+
+    .fireworks-container {
+        width:
+            100%;
+
+        height:
+            420px;
+
+        border-radius:
+            20px;
+    }
+
+
+    .fireworks-button {
+        max-width:
+            calc(100% - 40px);
+    }
+
+
+    .surprise-message {
+        width:
+            90%;
+
+        font-size:
+            17px;
+
+        line-height:
+            1.6;
+    }
+
+
+
+    /* -----------------------------------------
+       FOOTER
+    ----------------------------------------- */
+
+    .site-footer {
+        padding:
+            50px 20px;
+    }
+
+
+    .site-footer p {
+        font-size:
+            14px;
+    }
+
+
+    .site-footer span {
+        font-size:
+            11px;
+
+        letter-spacing:
+            2px;
+    }
+
+}
+
+
+
+/* =========================================================
+   CELULARES MUY PEQUEÑOS
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .section {
+        padding:
+            80px 14px;
+    }
+
+
+    .home-content h1 {
+        font-size:
+            2.8rem;
+    }
+
+
+    .section-title {
+        font-size:
+            2.2rem;
+    }
+
+
+    .menu-content {
+        width:
+            calc(100% - 20px);
+
+        padding:
+            30px 13px 20px;
+    }
+
+
+    .menu-item {
+        min-height:
+            63px;
+    }
+
+
+    .menu-text strong {
+        font-size:
+            12px;
+    }
+
+
+    .menu-text small {
+        font-size:
+            9px;
+    }
+
+
+    .language-card {
+        min-height:
+            310px;
+    }
+
+
+    .letter-paper {
+        padding:
+            30px 20px;
+    }
+
+}
+
+
+
+/* =========================================================
+   PANTALLAS GRANDES
+========================================================= */
+
+@media (min-width: 1400px) {
+
+    .section {
+        padding:
+            140px 60px;
+    }
+
+
+    .home-content h1 {
+        font-size:
+            7rem;
+    }
+
+
+    .section-title {
+        font-size:
+            4.5rem;
+    }
+
+
+    .section-description {
+        max-width:
+            750px;
+    }
+
+}
+
+
+
+/* =========================================================
+   REDUCIR ANIMACIONES SI EL SISTEMA LO PIDE
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration:
+            0.01ms !important;
+
+        animation-iteration-count:
+            1 !important;
+
+        scroll-behavior:
+            auto !important;
+
+        transition-duration:
+            0.01ms !important;
+    }
+
+}
