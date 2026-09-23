@@ -2176,3 +2176,49 @@ button {
     opacity: 0;
   }
 }
+
+/* ================= BOTÓN DEL JUEGO ================= */
+.btn-juego {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 30px;
+  background: linear-gradient(135deg, #fbc02d 0%, #f57f17 100%);
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(245, 127, 23, 0.35);
+  border: 2px solid #ffe082;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+}
+
+/* Efecto al pasar el cursor */
+.btn-juego:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(245, 127, 23, 0.5);
+  background: linear-gradient(135deg, #fdd835 0%, #f57f17 100%);
+}
+
+/* Efecto al hacer clic */
+.btn-juego:active {
+  transform: translateY(-1px) scale(0.98);
+  box-shadow: 0 5px 12px rgba(245, 127, 23, 0.4);
+}
+
+/* Animación del icono de girasol */
+.btn-juego .btn-icono {
+  font-size: 1.4rem;
+  display: inline-block;
+  animation: bamboleo 2s infinite ease-in-out;
+}
+
+@keyframes bamboleo {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-12deg); }
+  75% { transform: rotate(12deg); }
+}
