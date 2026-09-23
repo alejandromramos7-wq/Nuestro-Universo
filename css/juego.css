@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #fffde7 0%, #fff9c4 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  user-select: none;
+}
+
+.hud {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 12px 24px;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(245, 127, 23, 0.2);
+  font-size: 1.2rem;
+  color: #f57f17;
+  font-weight: bold;
+  z-index: 10;
+  border: 2px solid #ffe082;
+}
+
+#game-area {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.flor-item {
+  position: absolute;
+  font-size: 3rem;
+  cursor: pointer;
+  animation: caer linear forwards;
+  touch-action: manipulation;
+}
+
+@keyframes caer {
+  0% { top: -60px; }
+  100% { top: 105vh; }
+}
+
+/* Modal de Victoria */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal.oculto {
+  display: none;
+}
+
+.modal-contenido {
+  background: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 24px;
+  text-align: center;
+  max-width: 400px;
+  margin: 20px;
+  box-shadow: 0 15px 35px rgba(245, 127, 23, 0.25);
+  border: 3px solid #ffe082;
+  animation: aparicion 0.4s ease-out;
+}
+
+@keyframes aparicion {
+  0% { transform: scale(0.7); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.iconos-victoria {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.modal-contenido h2 {
+  color: #f57f17;
+  margin-bottom: 15px;
+}
+
+.mensaje {
+  color: #795548;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 25px;
+}
+
+.btn-volver {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #fbc02d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(251, 192, 45, 0.4);
+  transition: transform 0.2s;
+}
+
+.btn-volver:hover {
+  transform: scale(1.05);
+}

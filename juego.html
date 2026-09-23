@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atrapa tus Flores Amarillas 🌼</title>
+  <link rel="stylesheet" href="css/juego.css">
+</head>
+<body>
+
+  <!-- Marcador de puntos -->
+  <div class="hud">
+    <span>Flores recolectadas: <strong id="contador">0</strong> / 10 🌻</span>
+  </div>
+
+  <!-- Zona donde caen las flores -->
+  <div id="game-area"></div>
+
+  <!-- Ventana emergente al ganar -->
+  <div id="modal-victoria" class="modal oculto">
+    <div class="modal-contenido">
+      <div class="iconos-victoria">🌻 🌼 💛</div>
+      <h2>¡Lo lograste mi amor!</h2>
+      <p class="mensaje">Usted no se me va a quedar sin sus flores amarillas mi amor</p>
+      <a href="index.html" class="btn-volver">Volver al inicio</a>
+    </div>
+  </div>
+
+  <script src="js/juego.js"></script>
+</body>
+</html>

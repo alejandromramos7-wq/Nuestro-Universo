@@ -2116,3 +2116,63 @@ button {
         font-size: 19px;
     }
 }
+
+/* ================= SECCIÓN FLORES AMARILLAS ================= */
+.flores-contenedor {
+  background: linear-gradient(135deg, #fffde7 0%, #fff9c4 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  margin: 2rem 0;
+  border-radius: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flores-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 3rem 2rem;
+  border-radius: 24px;
+  box-shadow: 0 15px 35px rgba(245, 127, 23, 0.15);
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #ffe082;
+}
+
+.flores-iconos {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+  animation: bounceFlores 2s infinite ease-in-out;
+}
+
+@keyframes bounceFlores {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+.flores-titulo {
+  color: #f57f17;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.flores-texto {
+  color: #795548;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Animación para la lluvia de flores */
+@keyframes caidaFlores {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(105vh) rotate(360deg);
+    opacity: 0;
+  }
+}
